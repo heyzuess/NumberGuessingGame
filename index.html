@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Number guessing game</title>
+
+</head>
+
+<body class="container">
+<div class="container" id="main">
+    <div id="header"></div>
+
+    <div class="container" id="main-contain">
+        <div class="container" id="content">
+            <h1>Number guessing game</h1>
+
+            <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+
+            <div class="form">
+                <label for="guessField">Enter a guess: </label>
+                <input type="text" id="guessField" class="guessField">
+                <input id="submit-button" type="submit" value="Submit guess" class="guessSubmit">
+            </div>
+        </div>
+        <div class="container" id="tables">
+            <table id="progress" class="table">
+                <tr>
+                    <th>Guesses</th>
+                    <th>Last Result</th>
+                    <th>Low Or Hi</th>
+                </tr>
+                <tr>
+                    <td id="guesses"></td>
+                    <td id="lastResult"></td>
+                    <td id="lowOrHi"></td>
+                </tr>
+            </table>
+
+            <table id="results" class="table">
+                <tr>
+                    <th>Game</th>
+                    <th>Guesses</th>
+                    <th>Last Result</th>
+                    <th>Low Or Hi</th>
+                    <th>Answer</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
