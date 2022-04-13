@@ -2,11 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-
+    <link rel="stylesheet" href="popup.css">
     <link rel="stylesheet" href="style.css">
-
     <title>Number guessing game</title>
-
 </head>
 
 <body class="container">
@@ -14,6 +12,31 @@
     <div id="header"></div>
 
     <div class="container" id="main-contain">
+        <div class="container popup" id="menu">
+            <button id="menuButton">Menu</button>
+            <div class="container popuptext menu-popup" id="menuOp">
+                <div class="container" id="menuExitCont">
+                    <button id="menuExit">x</button>
+                </div>
+                <div class="container" id="menuContent">
+                    <h2>Game Settings</h2>
+
+                    <label for="menu-guesses">Number of Guesses:</label>
+                    <input type="text" alt="Number of Guesses" id="menu-guesses">
+
+                    <label for="menu-startRange">Start Range:</label>
+                    <input type="text" alt="Start Range" id="menu-startRange">
+
+                    <label for="menu-endRange">End Range:</label>
+                    <input type="text" alt="End Range" id="menu-endRange">
+
+                    <div class="container" id="menuButtons">
+                        <button id="saveChanges">Save</button>
+                        <button id="discardChanges">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container" id="content">
             <h1>Number guessing game</h1>
 

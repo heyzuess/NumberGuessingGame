@@ -94,3 +94,121 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+#menu {
+    width: 544px;
+    margin: 0;
+    padding: 0;
+
+    flex-direction: column;
+}
+
+#menuButton {
+    background-color: #183d66;
+    color: white;
+    border-radius: 5px;
+    padding: 4px 0;
+    max-width: 100px;
+    font-size: 16px;
+    opacity: .5;
+}
+
+#menuExitCont {
+    justify-content: flex-end;
+}
+
+#menuExit {
+    background-color: #172040;
+    color: white;
+    padding: 6px 10px;
+    margin: 8px;
+    border-radius: 50%;
+    box-shadow: none;
+    font-weight: bold;
+    border-style: none;
+    text-align: center;
+}
+
+#menuExit:hover {
+    background-color: #3d3d3d;
+}
+
+#menuOp {
+    /*
+    width: 100px;
+    height: 100px;
+     */
+    min-width: 250px;
+    background-color: #183d66;
+    color: white;
+    font-size: 16px;
+    opacity: .95;
+    padding: 0;
+
+    flex: 1;
+    flex-direction: column;
+}
+
+#menuContent {
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 16px 16px 16px;
+}
+
+#menuContent label {
+    text-align: left;
+}
+
+#menuContent input {
+    margin-bottom: 8px;
+    text-align: right;
+    font-size: 16px;
+}
+
+#menuContent h2 {
+    margin: 8px;
+}
+
+#menuButtons {
+    flex: 1;
+    justify-content: flex-end;
+    gap: 4px;
+}
+
+#menuButtons button {
+    background-color: #172040;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: none;
+}
+
+#menuButtons button:hover {
+    background-color: #3d3d3d;
+}
+
+.menu-popup {
+    left: 42%;
+    top: 100%;
+}
+
+/* class to toggle fade in animation */
+.popup .show-95 {
+    visibility: visible;
+    -webkit-animation: fadeIn-95 1s;
+    animation: fadeIn-95 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn-95 {
+    from {opacity: 0;}
+    to {opacity: .95;}
+}
+
+@keyframes fadeIn-95 {
+    from {opacity: 0;}
+    to {opacity: .95;}
+}
